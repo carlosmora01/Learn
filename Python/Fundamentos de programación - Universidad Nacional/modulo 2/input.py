@@ -11,3 +11,11 @@ print('El valor en centimetros es: ', c)
 # Sensible a mayúscula y minúscula
 
 #Como recomendación se sugiere usar nombre mnemotécnicos
+
+segundos = int(input())
+
+horas = int(segundos/3600)
+minutos = int((segundos%3600)/60)
+segundosFinal = ((segundos%3600) - minutos * 60)
+
+print(horas,minutos,segundosFinal,sep=":")
