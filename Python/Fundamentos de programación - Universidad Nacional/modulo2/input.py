@@ -12,10 +12,6 @@ print('El valor en centimetros es: ', c)
 
 #Como recomendación se sugiere usar nombre mnemotécnicos
 
-segundos = int(input())
+x = 71.1
 
-horas = int(segundos/3600)
-minutos = int((segundos%3600)/60)
-segundosFinal = ((segundos%3600) - minutos * 60)
-
-print(horas,minutos,segundosFinal,sep=":")
+print(float(round(x, 3)))
