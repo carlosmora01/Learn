@@ -63,3 +63,72 @@ else:
         print("Faltan", (720 - b), "para las 12")
     else:
         print("Faltan", (720 - d), "para las 12")
+
+# Reloj en el espejo
+
+hora = int(input())
+minuto = int(input())
+
+if(11>hora>1) and (minuto!=0 and minuto!=30):
+    print(11-hora, ":", 60-minuto, sep="")
+elif(11 == hora) and (minuto!=0 and minuto!=30):
+    print('12:', 60-minuto, sep="")
+elif(hora == 12 and minuto==0):
+    print('12:0')
+elif(hora == 12 and minuto!=0):
+    print('11:', 60-minuto, sep="")
+elif(hora != 12 and hora!=6) and (minuto == 0):
+    print(12-hora, ':0', sep='')
+elif(hora == 6 and minuto == 0):
+    print('6:0')
+elif(hora == 6 and minuto!=0):
+    print('5:', 60-minuto, sep='')
+elif(hora!=6 and hora!=11) and (minuto==30):
+    print(11-hora, ':30', sep='')
+elif(hora == 11 and minuto == 30):
+    print('12:30')
+
+# Núnmeros primos
+
+x = int(input())
+
+if(x%2 == 0):
+    print(f'{x} es multiplo de 2')
+elif(x%3 == 0):
+    print(f'{x} es multiplo de 3')
+elif(x%5 == 0):
+    print(f'{x} es multiplo de 5')
+elif(x%7 == 0):
+    print(f'{x} es multiplo de 7')
+else:
+    print(f'{x} no es multiplo de ninguno de los primeros cuatro primos')
+
+# Piedra papel o tijera
+
+X = str(input())
+Y = str(input())
+
+if (X == 'piedra'):
+    if (Y == 'piedra'):
+        print("empate")
+    elif(Y == 'papel'):
+        print(f'{Y} vence {X}')
+    elif(Y == 'tijera'):
+        print(f'{X} vence {Y}')
+elif (X == 'tijera'):
+    if (Y == 'tijera'):
+        print("empate")
+    elif(Y == 'papel'):
+        print(f'{X} vence {Y}')
+    elif(Y == 'piedra'):
+        print(f'{Y} vence {X}')
+elif (X == 'papel'):
+    if (Y == 'papel'):
+        print("empate")
+    elif(Y == 'tijera'):
+        print(f'{Y} vence {X}')
+    elif(Y == 'piedra'):
+        print(f'{X} vence {Y}')
+
+# Equivalencia en billetes
+

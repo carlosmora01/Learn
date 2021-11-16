@@ -1,16 +1,6 @@
-a = int(input())
-b = int(input())
-c = str(input())
+x = int(input())
 
-d = (a * 60) + b
-
-if( c == "am"):
-    if (a == 12):
-        print("Faltan", (1440 - b), "para las 12")
-    else:
-        print("Faltan", (1440 - d), "para las 12")
-else:
-    if (a == 12):
-        print("Faltan", (720 - b), "para las 12")
-    else:
-        print("Faltan", (720 - d), "para las 12")
+for i in [50000, 20000, 10000, 5000, 2000, 1000]:
+    if (x%i == 0):
+        y = x/i
+        print(f'{y} de {i}')
